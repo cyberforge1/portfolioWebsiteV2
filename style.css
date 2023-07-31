@@ -7,7 +7,7 @@
   /* Body */
   body {
     color: black;
-    font-family: Arial, sans-serif;
+    font-family: 'Oswald', sans-serif Light 300, Arial, sans-serif; /* Use the Oswald font with fallback options */
     scroll-behavior: smooth;
   }
   
@@ -23,6 +23,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  /* Headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif Regular 400, Arial, sans-serif; /* Use the Roboto font with fallback options */
   }
   
   /* Sections */
@@ -76,6 +81,8 @@
   footer p {
     margin: 0;
   }
+
+
   
 #about {
   background-image: url('mountain.png');
@@ -128,7 +135,7 @@
 .about-me-div {
   width: 100%;
   padding: 20px;
-  background-color: black;
+  background-color: transparent;
   color: #fff;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -194,6 +201,7 @@
     border-radius: 8px; /* Increase the border-radius to make the edges rounded */
     padding: 20px;
     margin-bottom: 20px;
+    background-color: #222;
   }
 
   /* New styles for the "resume" section */
@@ -207,25 +215,23 @@
   }
 
   
-  /* New styles for the "projects" section */
-  #projects {
+/* New styles for the "projects" section */
+#projects {
     background-color: #222; /* Replace with your desired darker grey color */
+    display: flex;
+    flex-direction: column; /* Stack the project divs vertically */
+    align-items: center; /* Center the project divs horizontally */
   }
   
-  
-  /* New styles for the "Projects" section container */
-  #projects .container {
-    background-color: #222; /* Replace with your desired darker grey color */
-  }
-  
-/* New styles for the individual "project-div" divs within the "projects" section */
+/* Additional styles for the individual "project-div" divs within the "projects" section */
 .project-div {
-    background-color: transparent; /* Replace with your desired dark grey color */
+    background-color: #222; /* Replace with your desired dark grey color */
     color: #fff;
     border-radius: 8px; /* Increase the border-radius to make the edges rounded */
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1); /* Update the box-shadow for a better appearance */
+    align-self: flex-start; /* Align the project divs to the top of the "projects" section */
   }
   
   /* New styles for the "Projects" section rows */
@@ -260,7 +266,7 @@
 .skills-div,
 .frameworks-div,
 .about-me-div {
-  background-color: transparent; /* Replace with your desired dark grey color */
+  background-color: #222; /* Replace with your desired dark grey color */
   color: #fff;
   border-radius: 8px; /* Increase the border-radius to make the edges rounded */
   padding: 20px;
@@ -275,14 +281,6 @@
     color: #fff;
 }
 
-/* Updated styles for the "Contact Me" section div */
-#contact .project-div {
-    background-color: #444; /* Replace with your desired dark grey color */
-    color: #fff;
-    border-radius: 8px; /* Increase the border-radius to make the edges rounded */
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1); /* Update the box-shadow for a better appearance */
-}
 
 /* Additional styles for centering the "RESUME" title */
 .resume-title {
@@ -313,8 +311,8 @@
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1); /* Update the box-shadow for a better appearance */
-    backdrop-filter: blur(10px); /* Add the backdrop-filter property to apply blur */
-  -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+    backdrop-filter: blur(20px); /* Add the backdrop-filter property to apply blur */
+  -webkit-backdrop-filter: blur(20px); /* For Safari compatibility */
   }
   
 
@@ -350,7 +348,6 @@
 .navbar-nav .nav-item .nav-link {
         font-size: 100%; /* 50% bigger than the original size */
     }
-
 
 
 .navbar {
@@ -416,3 +413,10 @@
     background-color: transparent;
     box-shadow: none;
   }
+
+
+  /* New CSS class to move the specific div down from the top */
+.move-down {
+    margin-top: 60px; /* Adjust the margin value as needed */
+  }
+
