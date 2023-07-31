@@ -1,0 +1,418 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body */
+  body {
+    color: black;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  /* Header */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3b5998;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Sections */
+  section {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  section h1 {
+    color: #3b5998;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  section ul li {
+    margin-bottom: 5px;
+  }
+  
+  section a {
+    color: #3b5998;
+    text-decoration: none;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+#about {
+  background-image: url('mountain.png');
+  background-size: cover;
+  background-position: top center;
+  background-color: rgba(0, 0, 0, 0); /* Set the background color to transparent using rgba */
+  color: #fff;
+  padding: 4rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+  #about h1,
+  #about p,
+  #about ul li {
+    color: #fff;
+  }
+  
+  /* Additional styles for links inside "about" and "contact" sections */
+  #contact a,
+  #about a {
+    color: #fff;
+  }
+  
+  #contact {
+    background-image: url('snow_flakes.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 4rem;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+/* New styles for the "about-me" section */
+#about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #36454f;
+}
+  
+/* New styles for the "about-me" div within the about-me section */
+.about-me-div {
+  width: 100%;
+  padding: 20px;
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Apply the "scrollable" class to make the div scrollable */
+  /* Remove the height property to let the content determine the div's height */
+}
+  
+/* New styles for the "skills-and-frameworks" section */
+#skills-and-frameworks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40vh; /* Set the height to 40% of the viewport height */
+}
+  
+
+/* New styles for the "Technologies & Skills" and "Frameworks" divs */
+.skills-div,
+.frameworks-div {
+    width: 48%; /* Reduce the width to make space for the spacing */
+    height: 100%; /* Set the height to 100% to occupy the available space */
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles to add spacing between the "skills-div" and "frameworks-div" */
+.skills-div {
+    margin-right: 2%;
+}
+
+  
+  /* Additional styles to add spacing between the "project-div" divs */
+  .project-div + .project-div {
+    margin-left: 2%;
+  }
+  
+  /* Additional styles to create spacing between the rows */
+  .project-row + .project-row {
+    margin-top: 20px;
+  }
+  
+  /* Additional styles for the "Contact Me" section content */
+  #contact h1,
+  #contact p,
+  #contact ul li {
+    color: #fff;
+  }
+  
+
+
+/* New styles for the "resume" section */
+#resume {
+    background-color: black;
+  }
+  
+/* New styles for the individual "resume-div" divs */
+.resume-div {
+    color: #fff;
+    border-radius: 8px; /* Increase the border-radius to make the edges rounded */
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* New styles for the "resume" section */
+.resume-section {
+    min-height: 100vh;
+  }
+  
+  /* Additional styles to make the "resume-div" divs span full width */
+  .resume-div {
+    width: 100%;
+  }
+
+  
+  /* New styles for the "projects" section */
+  #projects {
+    background-color: #222; /* Replace with your desired darker grey color */
+  }
+  
+  
+  /* New styles for the "Projects" section container */
+  #projects .container {
+    background-color: #222; /* Replace with your desired darker grey color */
+  }
+  
+/* New styles for the individual "project-div" divs within the "projects" section */
+.project-div {
+    background-color: transparent; /* Replace with your desired dark grey color */
+    color: #fff;
+    border-radius: 8px; /* Increase the border-radius to make the edges rounded */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1); /* Update the box-shadow for a better appearance */
+  }
+  
+  /* New styles for the "Projects" section rows */
+  .project-row {
+    margin-top: 20px;
+  }
+  
+  /* New styles for the columns in the "Projects" section */
+  #projects .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute the space evenly between the project-div and the stretch-div */
+  }
+  
+  /* New styles for the "Projects" section headers */
+  .project-div h2 {
+    color: #fff;
+  }
+  
+  /* New styles for the "Projects" section descriptions */
+  .project-div p {
+    color: #ddd;
+  }
+  
+  /* Additional styles to add spacing between the rows */
+  .project-row + .project-row {
+    margin-top: 20px;
+  }
+
+
+  /* New styles for the individual "skills-div" and "frameworks-div" divs */
+.skills-div,
+.frameworks-div,
+.about-me-div {
+  background-color: transparent; /* Replace with your desired dark grey color */
+  color: #fff;
+  border-radius: 8px; /* Increase the border-radius to make the edges rounded */
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1); /* Update the box-shadow for a better appearance */
+}
+
+/* Additional styles for the "Contact Me" section content */
+#contact h1,
+#contact p,
+#contact ul li {
+    color: #fff;
+}
+
+/* Updated styles for the "Contact Me" section div */
+#contact .project-div {
+    background-color: #444; /* Replace with your desired dark grey color */
+    color: #fff;
+    border-radius: 8px; /* Increase the border-radius to make the edges rounded */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1); /* Update the box-shadow for a better appearance */
+}
+
+/* Additional styles for centering the "RESUME" title */
+.resume-title {
+    text-align: center;
+  }
+  .resume-title h3 {
+    margin: 0; /* Remove any default margin for the h3 element */
+  }
+
+  .scrollable {
+  overflow-y: auto; /* This property enables vertical scrolling when content overflows */
+  max-height: 70vh; /* Set the maximum height for the div to limit its expansion */
+}
+
+#contact, #about {
+    align-items: flex-start;
+  }
+
+  #about {
+    margin-top: 80px; /* Adjust as needed */
+  }
+
+/* Updated styles for the "contact-me-div" divs */
+.contact-me-div {
+    width: 100%; /* Set the width to 100% to span the full screen width */
+    color: #fff;
+    border-radius: 8px; /* Increase the border-radius to make the edges rounded */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1); /* Update the box-shadow for a better appearance */
+    backdrop-filter: blur(10px); /* Add the backdrop-filter property to apply blur */
+  -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+  }
+  
+
+
+
+  #contact {
+    align-items: flex-start;
+}
+
+/* Updated styles for the contact-container */
+.contact-container {
+    width: 100%; /* Set the width to 100% to span the full horizontal width */
+    display: flex;
+    flex-direction: column; /* Stack the contact-me-div divs vertically */
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* Other CSS styles... */
+
+/* Custom style for the navbar links to adjust text size */
+.navbar-nav .nav-link,
+.navbar-brand {
+  font-size: 1rem;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 50px; /* Adjust the margin to increase or decrease spacing */
+}
+
+/* Custom CSS for increasing font size */
+.navbar-nav .nav-item .nav-link {
+        font-size: 100%; /* 50% bigger than the original size */
+    }
+
+
+
+.navbar {
+    background-color: transparent !important;
+    height: 40px; /* Adjust the height as needed */
+  }
+
+/* Additional styles for the navbar links */
+.navbar-nav .nav-link,
+.navbar-brand {
+  color: #fff !important;
+}
+
+.no-shadow-section {
+  box-shadow: none;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 8px; /* Increase the border-radius to make the edges rounded */
+  padding: 20px;
+}
+
+  
+
+/* New styles for the "projects-container" */
+.projects-container {
+    display: flex;
+    flex-direction: column; /* Stack the project divs vertically */
+  }
+  
+  /* Additional styles for the "project-div" divs within the "projects-container" */
+  .projects-container .project-div {
+    order: -1; /* Move all the project divs to the top of the container */
+  }
+
+
+  .custom-heading {
+    font-size: 300%; /* 100% bigger than the original size */
+  }
+
+
+  #contact .fa-2x {
+    margin-right: 15px; /* Adjust the margin to increase or decrease spacing between icons */
+  }
+
+
+  .project-link:hover {
+    cursor: pointer;
+  }
+
+  #about .fa-2x {
+  margin-right: 20px;
+}
+
+
+      /* Adjust the position of the "about" section's div */
+      #about .no-outline {
+        margin-top: -20px; /* Adjust this value to move the div up or down as needed */
+      }
+
+
+      /* New CSS class to remove background color and shadow */
+.no-background-shadow {
+    background-color: transparent;
+    box-shadow: none;
+  }
