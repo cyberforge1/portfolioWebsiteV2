@@ -23,16 +23,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9999; /* Set the z-index to a high value (e.g., 9999) to bring the navbar to the front */
   }
 
   /* Headers */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif Regular 400, Arial, sans-serif; /* Use the Roboto font with fallback options */
+    font-family: 'Montserrat', sans-serif Regular 400, Arial, sans-serif; /* Use the Roboto font with fallback options */
   }
   
   /* Sections */
   section {
-    background-color: #333;
     color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -82,7 +82,41 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
   }
 
+  
 
+/* Custom style for the navbar links to adjust text size */
+.navbar-nav .nav-link,
+.navbar-brand {
+  font-size: 1rem;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 50px; /* Adjust the margin to increase or decrease spacing */
+}
+
+/* Custom CSS for increasing font size */
+.navbar-nav .nav-item .nav-link {
+        font-size: 100%; /* 50% bigger than the original size */
+    }
+
+.navbar {
+    background-color: #3b5998 !important;
+    height: 40px; /* Adjust the height as needed */
+  }
+
+/* Additional styles for the navbar links */
+.navbar-nav .nav-link,
+.navbar-brand {
+  color: #fff !important;
+}
+
+.no-shadow-section {
+  box-shadow: none;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 8px; /* Increase the border-radius to make the edges rounded */
+  padding: 20px;
+}
   
 #about {
   background-image: url('mountain.png');
@@ -128,8 +162,11 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    background-color: #36454f;
-}
+    background-image: url('ice_shards_2.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
   
 /* New styles for the "about-me" div within the about-me section */
 .about-me-div {
@@ -138,33 +175,68 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
   color: #fff;
   border-radius: 5px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* Apply the "scrollable" class to make the div scrollable */
-  /* Remove the height property to let the content determine the div's height */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1); /* Update the box-shadow for a better appearance */
+  align-self: flex-start; /* Align the project divs to the top of the "projects" section */
+      /* Add a thin white border around the outside */
+  border: 1px solid white;
+  border-radius: 8px; /* Increase the border-radius to make the edges rounded */
+  backdrop-filter: blur(100px); /* Adjust the blur value to your preference */
+  margin-top: 40px;
 }
+
+  /* New styles for the individual "resume-div" divs */
+  .resume-top-div {
+    margin-top: 15px;
+    background-color: transparent; /* Replace with your desired dark grey color */
+    color: #fff;
+    border-radius: 8px; /* Increase the border-radius to make the edges rounded */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1); /* Update the box-shadow for a better appearance */
+    align-self: flex-start; /* Align the project divs to the top of the "projects" section */
+        /* Add a thin white border around the outside */
+    border: 1px solid white;
+    border-radius: 8px; /* Increase the border-radius to make the edges rounded */
+  }
   
-/* New styles for the "skills-and-frameworks" section */
+/* New styles for the individual "resume-div" divs */
+.resume-div {
+    background-color: transparent; /* Replace with your desired dark grey color */
+    color: #fff;
+    border-radius: 8px; /* Increase the border-radius to make the edges rounded */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1); /* Update the box-shadow for a better appearance */
+    align-self: flex-start; /* Align the project divs to the top of the "projects" section */
+        /* Add a thin white border around the outside */
+    border: 1px solid white;
+    border-radius: 8px; /* Increase the border-radius to make the edges rounded */
+  }
+  
+  
 #skills-and-frameworks {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 40vh; /* Set the height to 40% of the viewport height */
-}
+  }
   
-
-/* New styles for the "Technologies & Skills" and "Frameworks" divs */
+/* New styles for the individual "skills-div" and "frameworks-div" divs */
 .skills-div,
 .frameworks-div {
-    width: 48%; /* Reduce the width to make space for the spacing */
-    height: 100%; /* Set the height to 100% to occupy the available space */
-    background-color: black;
-    color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  backdrop-filter: blur(40px);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  max-height: 40vh; /* Set the maximum height for the div to limit its expansion */
 }
-
 /* Additional styles to add spacing between the "skills-div" and "frameworks-div" */
 .skills-div {
     margin-right: 2%;
@@ -193,18 +265,12 @@ h1, h2, h3, h4, h5, h6 {
 /* New styles for the "resume" section */
 #resume {
     background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
   }
-  
-/* New styles for the individual "resume-div" divs */
-.resume-div {
-    background-color: #222; /* Replace with your desired dark grey color */
-    color: #fff;
-    border-radius: 8px; /* Increase the border-radius to make the edges rounded */
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1); /* Update the box-shadow for a better appearance */
-    align-self: flex-start; /* Align the project divs to the top of the "projects" section */
-  }
+
 
   /* New styles for the "resume" section */
 .resume-section {
@@ -219,23 +285,16 @@ h1, h2, h3, h4, h5, h6 {
   
 /* New styles for the "projects" section */
 #projects {
-    background-color: #222; /* Replace with your desired darker grey color */
     display: flex;
-    flex-direction: column; /* Stack the project divs vertically */
-    align-items: center; /* Center the project divs horizontally */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('dark_snow.png');
+    background-size: cover;
+    background-position: center;
   }
-  
-/* Additional styles for the individual "project-div" divs within the "projects" section */
-.project-div {
-    background-color: #222; /* Replace with your desired dark grey color */
-    color: #fff;
-    border-radius: 8px; /* Increase the border-radius to make the edges rounded */
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1); /* Update the box-shadow for a better appearance */
-    align-self: flex-start; /* Align the project divs to the top of the "projects" section */
-  }
-  
+
+
   /* New styles for the "Projects" section rows */
   .project-row {
     margin-top: 20px;
@@ -268,7 +327,6 @@ h1, h2, h3, h4, h5, h6 {
 .skills-div,
 .frameworks-div,
 .about-me-div {
-  background-color: #222; /* Replace with your desired dark grey color */
   color: #fff;
   border-radius: 8px; /* Increase the border-radius to make the edges rounded */
   padding: 20px;
@@ -296,6 +354,25 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 80px; /* Adjust as needed */
   }
 
+  /* Updated styles for the "contact-me-div" divs */
+.contact-me-title {
+    width: 100%; /* Set the width to 100% to span the full screen width */
+    color: #fff;
+    border-radius: 8px; /* Increase the border-radius to make the edges rounded */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1); /* Update the box-shadow for a better appearance */
+    backdrop-filter: blur(20px); /* Add the backdrop-filter property to apply blur */
+  -webkit-backdrop-filter: blur(20px); /* For Safari compatibility */
+  font-family: 'Roboto', sans-serif;
+  }
+
+    /* Additional styles to center the "About Me" title */
+.contact-me-title h2 {
+    font-size: 40px; /* Update the font size to your preference */
+    text-align: center;
+  }
+
 /* Updated styles for the "contact-me-div" divs */
 .contact-me-div {
     width: 100%; /* Set the width to 100% to span the full screen width */
@@ -306,9 +383,9 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1); /* Update the box-shadow for a better appearance */
     backdrop-filter: blur(20px); /* Add the backdrop-filter property to apply blur */
   -webkit-backdrop-filter: blur(20px); /* For Safari compatibility */
+  
   }
   
-
 
 
   #contact {
@@ -323,44 +400,6 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
   }
-
-
-  /* Other CSS styles... */
-
-/* Custom style for the navbar links to adjust text size */
-.navbar-nav .nav-link,
-.navbar-brand {
-  font-size: 1rem;
-}
-
-.navbar-nav .nav-item {
-    margin-right: 50px; /* Adjust the margin to increase or decrease spacing */
-}
-
-/* Custom CSS for increasing font size */
-.navbar-nav .nav-item .nav-link {
-        font-size: 100%; /* 50% bigger than the original size */
-    }
-
-
-.navbar {
-    background-color: transparent !important;
-    height: 40px; /* Adjust the height as needed */
-  }
-
-/* Additional styles for the navbar links */
-.navbar-nav .nav-link,
-.navbar-brand {
-  color: #fff !important;
-}
-
-.no-shadow-section {
-  box-shadow: none;
-  background-color: transparent;
-  color: #fff;
-  border-radius: 8px; /* Increase the border-radius to make the edges rounded */
-  padding: 20px;
-}
 
   
 
@@ -377,7 +416,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
   .custom-heading {
-    font-size: 300%; /* 100% bigger than the original size */
+    font-size: 350%; /* 100% bigger than the original size */
   }
 
 
@@ -408,29 +447,133 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 
-
-
   .project-div {
     height: 25vh; /* Set the height to 25% of the viewport height */
     overflow-y: auto;
     height: 300px; /* Set the height to your desired value */
+
+    /* Add blurred background and transparency */
+    backdrop-filter: blur(40px); /* Adjust the blur value to your preference */
+    background-color: transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1); /* Update the box-shadow for a better appearance */
+    /* Add a thin white border around the outside */
+    border: 1px solid white;
+    border-radius: 8px; /* Increase the border-radius to make the edges rounded */
 }
 
+.project-div-pushdown {
+    margin-top: 13px;
+}
 
 .project-title-div {
     text-align: center;
     margin: 0; /* Remove any default margin for the h3 element */
-    background-color: #222; /* Replace with your desired dark grey color */
+    background-color: transparent;
     color: #fff;
     border-radius: 8px; /* Increase the border-radius to make the edges rounded */
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1); /* Update the box-shadow for a better appearance */
     align-self: flex-start; /* Align the project divs to the top of the "projects" section */
+    backdrop-filter: blur(40px); /* Adjust the blur value to your preference */
+    /* Add a thin white border around the outside */
+    border: 1px solid white;
+    font-family: 'Roboto', sans-serif;
 }
 
+  /* Additional styles to center the "About Me" title */
+  .project-title-div h2 {
+    font-size: 40px; /* Update the font size to your preference */
+    text-align: center;
+  }
+
+
+
+  /* Additional styles to center the "About Me" title */
+.resume-title-div h2 {
+    font-size: 40px; /* Update the font size to your preference */
+    text-align: center;
+  }
 
 
 .resume-div-custom {
     margin-top: 50px;
   }
+
+  .resume-title-div {
+    text-align: center;
+    margin: 0; /* Remove any default margin for the h3 element */
+    background-color: transparent;
+    color: #fff;
+    border-radius: 8px; /* Increase the border-radius to make the edges rounded */
+    padding: 20px;
+    margin-bottom: 20px;
+    align-self: flex-start; /* Align the project divs to the top of the "projects" section */
+    border: 1px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1); /* Update the box-shadow for a better appearance */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* New styles for the "about-title-div" */
+.about-title-div {
+    background-color: transparent; /* Replace with your desired dark grey color */
+    color: #fff;
+    border-radius: 8px; /* Increase the border-radius to make the edges rounded */
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    align-self: flex-start; /* Align the project divs to the top of the "projects" section */
+    background-color: transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px rgba(255, 255, 255, 0.1); /* Update the box-shadow for a better appearance */
+    border: 1px solid white;
+    backdrop-filter: blur(100px); /* Adjust the blur value to your preference */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Additional styles to center the "About Me" title */
+  .about-title-div h2 {
+    font-size: 40px; /* Update the font size to your preference */
+    text-align: center;
+  }
+
+/* Add the "col-md-6" class to the "contact-me-div" divs within the "contact-container" */
+.contact-container .contact-me-div {
+    flex: 1; /* Make the "contact-me-div" divs take up equal horizontal space */
+    margin-right: 2%; /* Add spacing between the "contact-me-div" divs */
+}
+
+
+/* Add your existing CSS styles here */
+
+/* New styles for the "no-outline" div to make it responsive */
+.no-outline {
+    font-size: 1vw; /* Adjust the font size relative to viewport width */
+  }
+  
+  /* Additional styles for the icons inside the "no-outline" div */
+  .no-outline i {
+    font-size: 2vw; /* Adjust the icon size relative to viewport width */
+  }
+  
+  /* Additional styles to adjust spacing between elements inside the "no-outline" div */
+  .no-outline p {
+    margin: 10px 0; /* Adjust margins as needed */
+  }
+  
+  /* Media query to adjust styles when the viewport width is smaller */
+  @media (max-width: 768px) {
+    .no-outline {
+      font-size: 2vw; /* Adjust the font size for smaller screens */
+    }
+  
+    /* Adjust icon size for smaller screens */
+    .no-outline i {
+      font-size: 4vw;
+    }
+  
+    /* Adjust spacing for smaller screens */
+    .no-outline p {
+      margin: 8px 0;
+    }
+  }
+  

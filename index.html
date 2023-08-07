@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Oswald:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -24,18 +24,18 @@
           <div class="container">
             <!-- Navbar Toggler -->
             <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+            class="navbar-toggler ms-auto order-last"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
               <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Navbar Links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse ms-auto" id="navbarNav">
               <ul class="navbar-nav ms-auto">
                 <!-- About Button -->
                 <li class="nav-item">
@@ -78,9 +78,15 @@
 
     <section id="about-me" class="py-5">
       <div class="container">
-        <div class="about-me-div bg-dark text-white p-4 mb-4">
+
+        <div class="about-title-div text-white p-4 mb-4">
+            <h2 class="text-center">About Me</h2>
+          </div>
+
+
+        <div class="about-me-div text-white p-4 mb-4">
           <!-- Added the "project-div" class here -->
-          <h1>About me</h1>
+          <h1>Summary</h1>
           <p>
             Highly motivated junior software engineer with expertise in Python, JavaScript, and web frameworks, complemented by a solid background in microbiology. Dedicated to continuous learning and professional growth, I am eager to contribute to cutting-edge software solutions in a collaborative team setting.
           </p>
@@ -100,7 +106,7 @@
         </div>
 
         <div id="skills-and-frameworks" class="mb-4">
-          <div class="skills-div bg-dark text-white p-4">
+          <div class="skills-div text-white p-4">
             <h1>Technologies & Skills</h1>
             <ul>
               <li>Python</li>
@@ -108,11 +114,10 @@
               <li>Node.js</li>
               <li>HTML</li>
               <li>CSS</li>
-              <li>Github</li>
             </ul>
           </div>
 
-          <div class="frameworks-div bg-dark text-white p-4">
+          <div class="frameworks-div text-white p-4">
             <h1>Frameworks</h1>
             <ul>
               <li>Django</li>
@@ -132,14 +137,14 @@
         <div class="row">
           <!-- New div added here -->
           <div class="col-md-12">
-            <div class="project-title-div bg-dark text-white p-4 mb-4">
-              <h3>Résumé</h3>
+            <div class="resume-title-div bg-dark text-white p-4 mb-4">
+              <h2>Résumé</h2>
               <!-- Add any additional content here -->
             </div>
           </div>
           <!-- First row with two divs -->
           <div class="col-md-12">
-            <div class="resume-div bg-dark text-white p-4 mb-4">
+            <div class="resume-top-div bg-dark text-white p-4 mb-4">
               <h3>Water Quality Analyst</h3>
               <h1>Sydney Water (Mar 2021 - present)</h1>
               <ul>
@@ -204,10 +209,10 @@
             <h3>Recent Coursework</h3>
             <ul>
               <li>HTML, CSS and Javascript for Web Developers - Coursera</li>
-              <li>Learn Intermediate Javascript - Codecademy</li>
-              <li>Using MongoDB with Node.js - MongoDB</li>
               <li>Build Python Web Apps with Django - Codecademy</li>
               <li>Build Python Web Apps with Flask - Codecademy</li>
+              <li>Using MongoDB with Node.js - MongoDB</li>
+              <li>Learn Intermediate Javascript - Codecademy</li>
             </ul>
           </div>
         </div>
@@ -218,7 +223,7 @@
 
     <section id="projects" class="py-5">
         <div class="container">
-          <div class="project-title-div bg-dark text-white p-4 mb-4 resume-title">
+          <div class="project-title-div text-white p-4 mb-4 resume-title">
             <h2>Projects</h2>
             <!-- Add any additional content here -->
           </div>
@@ -226,7 +231,7 @@
             <!-- Wrap all the project divs inside this new container -->
             <div class="row">
                 <div id="project1" class="col-md-6 project-link">
-                    <div class="project-div bg-dark text-white p-4 mb-4">
+                    <div class="project-div project-div-pushdown text-white p-4 mb-4">
                       <h2>Dall•E 2 Randomized Image Generator</h2>
                       <p>
                         This is a Django web application that allows users to generate a random string using ChatGPT-generated data as a unique prompt. Upon clicking a button, the application sends this prompt to the OPENAI DALL•E 2 API to generate a unique image. The generated images are saved in a public gallery and also under the user's account history.
@@ -236,7 +241,7 @@
                   
                   <!-- Add unique IDs to each project div -->
                   <div id="project2" class="col-md-6 project-link">
-                    <div class="project-div bg-dark text-white p-4 mb-4">
+                    <div class="project-div project-div-pushdown text-white p-4 mb-4">
                       <h2>chatGPT Fine-Tuned Model</h2>
                       <p>
                         This Python application utilizes the OpenAI API to create a dataset, populating a spreadsheet with the gathered information. The dataset is then employed to fine-tune a chatGPT model with a focus on poetry.
@@ -246,7 +251,7 @@
                   
                   <!-- Add unique IDs to each project div -->
                   <div id="project3" class="col-md-6 project-link">
-                    <div class="project-div bg-dark text-white p-4 mb-4">
+                    <div class="project-div text-white p-4 mb-4">
                       <h2>Real Estate API - Flask API</h2>
                       <p>  
                         This Flask RESTful API serves as a tool to retrieve property-specific data for Quakers Hill, Sydney (postcode: 2763). Interacting with CoreLogic's sandbox environment, it fetches property details, timelines, and estimated rental values.
@@ -256,7 +261,7 @@
                   
                   <!-- Add unique IDs to each project div -->
                   <div id="project4" class="col-md-6 project-link">
-                    <div class="project-div bg-dark text-white p-4 mb-4">
+                    <div class="project-div text-white p-4 mb-4">
                       <h2>Social Media App - MERN Stack</h2>
                       <p>
                         This project is a Social Media App built using the MERN (MongoDB, Express, React, Node.js) stack. This app has been built directly from a tutorial on Youtube and extra functionality has been added to the app, which utilizes the Twilio Sendgrid API to send a user-specific email upon completing the registration process.
@@ -271,22 +276,23 @@
     <div class="stretch-div"></div>
 
     <section id="contact" class="bg-secondary text-white text-center py-5">
-        <div class="contact-container">
-            <!-- Remove the "container" class from both "contact-me-div" divs -->
-            <div class="contact-me-div scrollable">
-                <h1>Contact Me</h1>
-            </div>
+        <div class="container"> <!-- Add the "container" class back to the parent div -->
+            <div class="row"> <!-- Add the "row" class to wrap the two "contact-me-div" divs -->
+                <div class="col-md-6 contact-me-title scrollable"> <!-- Add the "col-md-6" class for the first div -->
+                    <h2>Contact Me</h2>
+                </div>
     
-            <!-- Existing "Contact Me" div -->
-            <div class="contact-me-div scrollable">
-                <p>Feel free to reach out to me through the following channels:</p>
-                <ul>
-                    <p>Email: ojenkins3045@gmail.com</p>
-                    <p>Phone: 0408 390 266</p>
-                    <a href="https://github.com/cyberforge1" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
-                    <a href="https://www.linkedin.com/in/obj809/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
-                    <a href="mailto:ojenkins3045@gmail.com"><i class="fas fa-envelope fa-2x"></i></a> <!-- Updated icon class -->
-                </ul>
+                <!-- Existing "Contact Me" div -->
+                <div class="col-md-6 contact-me-div scrollable"> <!-- Add the "col-md-6" class for the second div -->
+                    <p>Please contact me through the channels below.</p>
+                    <ul>
+                        <p>Email: ojenkins3045@gmail.com</p>
+                        <p>Phone: 0408 390 266</p>
+                        <a href="https://github.com/cyberforge1" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/obj809/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                        <a href="mailto:ojenkins3045@gmail.com"><i class="fas fa-envelope fa-2x"></i></a> <!-- Updated icon class -->
+                    </ul>
+                </div>
             </div>
         </div>
     </section>

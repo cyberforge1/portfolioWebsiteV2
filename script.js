@@ -61,8 +61,7 @@ projectDivs.forEach((div) => {
     // Perform the redirection based on the clicked div's ID
     switch (projectId) {
       case "project1":
-        window.location.href =
-          "https://imageforge3-69e1844e43ca.herokuapp.com/";
+        window.location.href = "https://github.com/cyberforge1/imageForgeV10";
         break;
       case "project2":
         window.location.href =
